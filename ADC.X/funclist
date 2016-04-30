@@ -1,0 +1,13 @@
+__stringtab: STRING, 901 0 6
+__stringdata: STRING, 907 0 12
+_ISR: CODE, 875 0 26
+_main: CODE, 37 0 482
+__initialization: CODE, 21 0 12
+_USARTWriteString: CODE, 847 0 28
+___lldiv: CODE, 519 0 96
+_USARTHandleRxInt: CODE, 705 0 72
+_USARTInit: CODE, 615 0 90
+_ADC_Read: CODE, 814 0 33
+___wmul: CODE, 777 0 37
+_ADC_Init: CODE, 919 0 9
+Total: 903

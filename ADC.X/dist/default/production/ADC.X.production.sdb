@@ -1,0 +1,224 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"26 C:\Documents and Settings\paras.shah\Desktop\ADC.X\ADC.c
+[v _ADC_Init ADC_Init `(v  1 e 0 0 ]
+"32
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"48
+[v _main main `(v  1 e 0 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"4 C:\Documents and Settings\paras.shah\Desktop\ADC.X\isr.c
+[v _ISR ISR `II(v  1 e 0 0 ]
+"6 C:\Documents and Settings\paras.shah\Desktop\ADC.X\usart_pic16.c
+[v _USARTInit USARTInit `T(v  1 e 0 0 ]
+"48
+[v _USARTWriteString USARTWriteString `(v  1 e 0 0 ]
+"65
+[v _USARTHandleRxInt USARTHandleRxInt `(v  1 e 0 0 ]
+"94
+[v _USARTReadData USARTReadData `(uc  1 e 1 0 ]
+"119
+[v _USARTDataAvailable USARTDataAvailable `(uc  1 e 1 0 ]
+"282 C:\Program Files\Microchip\xc8\v1.34\include\pic16f887.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S89 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"540
+[u S97 . 1 `S89 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES97  1 e 1 @12 ]
+[s S194 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1041
+[s S203 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S207 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S210 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S213 . 1 `S194 1 . 1 0 `S203 1 . 1 0 `S207 1 . 1 0 `S210 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES213  1 e 1 @24 ]
+"1105
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1111
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1204
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1210
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S21 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1241
+[s S26 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S35 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S38 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S41 . 1 `S21 1 . 1 0 `S26 1 . 1 0 `S35 1 . 1 0 `S38 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES41  1 e 1 @31 ]
+"1440
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1501
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S157 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2527
+[s S166 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S170 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S173 . 1 `S157 1 . 1 0 `S166 1 . 1 0 `S170 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES173  1 e 1 @152 ]
+"2586
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2909
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2915
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"3706
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3802
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"3846
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"3890
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
+"3892
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"37 C:\Documents and Settings\paras.shah\Desktop\ADC.X\usart_pic16.h
+[v _URBuff URBuff `VE[64]uc  1 e 64 0 ]
+"38
+[v _UQFront UQFront `VEc  1 e 1 0 ]
+"39
+[v _UQEnd UQEnd `VEc  1 e 1 0 ]
+"48 C:\Documents and Settings\paras.shah\Desktop\ADC.X\ADC.c
+[v _main main `(v  1 e 0 0 ]
+{
+"53
+[v main@ADC_value ADC_value `ul  1 a 4 40 ]
+"54
+[v main@digit1 digit1 `ui  1 a 2 38 ]
+[v main@digit2 digit2 `ui  1 a 2 36 ]
+[v main@digit3 digit3 `ui  1 a 2 34 ]
+[v main@digit4 digit4 `ui  1 a 2 32 ]
+"84
+} 0
+"15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 15 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 19 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 6 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 10 ]
+"31
+} 0
+"48 C:\Documents and Settings\paras.shah\Desktop\ADC.X\usart_pic16.c
+[v _USARTWriteString USARTWriteString `(v  1 e 0 0 ]
+{
+[v USARTWriteString@str str `*.24DCCuc  1 a 1 wreg ]
+[v USARTWriteString@str str `*.24DCCuc  1 a 1 wreg ]
+[v USARTWriteString@str str `*.24DCCuc  1 a 1 1 ]
+"55
+} 0
+"6
+[v _USARTInit USARTInit `T(v  1 e 0 0 ]
+{
+[v USARTInit@baud_rate baud_rate `ui  1 p 2 0 ]
+"39
+} 0
+"32 C:\Documents and Settings\paras.shah\Desktop\ADC.X\ADC.c
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+"35
+[v ADC_Read@channel channel `uc  1 a 1 3 ]
+"46
+} 0
+"26
+[v _ADC_Init ADC_Init `(v  1 e 0 0 ]
+{
+"30
+} 0
+"4 C:\Documents and Settings\paras.shah\Desktop\ADC.X\isr.c
+[v _ISR ISR `II(v  1 e 0 0 ]
+{
+"10
+} 0
+"65 C:\Documents and Settings\paras.shah\Desktop\ADC.X\usart_pic16.c
+[v _USARTHandleRxInt USARTHandleRxInt `(v  1 e 0 0 ]
+{
+"73
+[v USARTHandleRxInt@data data `uc  1 a 1 4 ]
+"92
+} 0

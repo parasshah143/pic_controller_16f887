@@ -1,0 +1,2 @@
+ADC program to send the 10bit equivalent data of analog voltage at pin
+AN0.
